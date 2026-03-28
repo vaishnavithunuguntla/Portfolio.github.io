@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/22950eb0a5.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo">Vaishnavi<span>.</span></h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i> 
+            </nav>
+            <div class="header-text">
+                <p>Developer</p>
+                <h1>Hi, I'm <span>Vaishnavi</span><br> from Chennai</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------about------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <!-- Left: Photo -->
+                <div class="about-col-1">
+                    <img src="img_portfolio/VAISHNAVI.jpeg" alt="Vaishnavi">
+                </div> 
+                <!-- Right: Title + Text -->
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am passionate about building innovative solutions and adapting to new challenges.
+                         With a solid foundation in Python, Java, and SQL, I enjoy solving complex
+                          problems and turning ideas into practical applications. My adaptability 
+                          and curiosity drive me to continuously learn and improve, ensuring that I 
+                          can contribute meaningfully to any project I take on.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')" >Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <!-- for skills tabcontent -->
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Python</span><br>Problem-solving and building applications</li>
+                                <li><span>Java</span><br>Object-oriented design and application development</li>
+                                <li><span>SQL</span><br>Efficient data management and querying</li>
+                            </ul>
+                        </div>
+                        <!-- for experience -->
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>March 12,2024-June 10,2024</span><br>Intership at Infosys Springboard</li>   
+                            </ul>
+                        </div>
+                        <!-- for education -->
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021-2025</span><br>Vignan's Nirula Institute of Technology and Science for Women</li>
+                                <li><span>2019-2021</span><br>Sri Sarada College</li>
+                                <li><span>2018-2019</span><br>Sri Chaitanya School</li>
+                            </ul>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------services------- -->
+    <div id="services">
+        <div class="container">
+             <h1 class="sub-title">My Services</h1>
+             <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python Development</h2>
+                    <p>I work with Python to build small applications and solve problems step by step.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-brain"></i>
+                    <h2>Machine Learning</h2>
+                    <p>I developed a project on PCOS detection using machine learning techniques to support healthcare insights.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>SQL Database</h2>
+                    <p>I can design tables, write queries, and manage data effectively for smooth database operations.</p>
+                    <a href="#">Learn more</a>
+                </div>
+             </div>
+        </div>
+    </div>
+  <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            
+            <div class="work">
+                <img src="img_portfolio/space_invaders.jpg" alt="space-invaders">
+                <div class="layer">
+                    <h2>Space Invaders</h2>
+                    <p>I created a simple Space Invaders game using Python. 
+                        The player controls a spaceship with arrow keys 
+                        and can attack enemies by shooting bullets.</p>
+                    <!-- GitHub link -->
+                    <a href="https://github.com/vaishnavithunuguntla/python-project" target="_blank">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>   
+            </div>
+
+            <div class="work">
+                <img src="img_portfolio/food.png" alt="food app">
+                <div class="layer">
+                    <h2>Online Food Ordering System</h2>
+                    <p>Developed an online food ordering system using Python and Django. 
+                        Users can search the menu, order items, and add them to a cart for
+                        a smooth ordering experience.</p>
+                    <!-- GitHub link -->
+                    <a href="https://github.com/vaishnavithunuguntla/Infosys-Internship-Project" target="_blank">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>   
+            </div>
+
+            <div class="work">
+                <img src="img_portfolio/pcos.png" alt="pcos detection">
+                <div class="layer">
+                    <h2>PCOS Detection</h2>
+                    <p>I built a machine learning project for PCOS 
+                        detection using XGBoost for predictive modeling and 
+                        SHAP analysis to explain feature importance and model decisions.</p>
+                    <!-- Google Colab link -->
+                    <a href="https://colab.research.google.com/drive/1Z6xarXf0KIBTQAOftSpWxyAL_9rE8hw6" target="_blank">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>   
+            </div>
+
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+
+    <!-- -----------contact-------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>suresh.thunuguntla78@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7780249938</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/vaishnavithunuguntla"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/thunuguntla-naga-vaishnavi/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="img_portfolio/thunuguntla vaishnavi_resume(1).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">hello</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Vaishnavi</p>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                //remove active cls name
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                //remove active cls name
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+           
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu")
+        function openmenu(){
+            sidemenu.style.right="0";
+
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+
+    
+<script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbzt_Djz1eVXtxG6c1VtErpw5VZOVDdiIm9eyHe7w-k3F2V9H0gaf2xsnVD0mtrbmJO0RA/exec'
+	const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+
+	form.addEventListener('submit', e => {
+		e.preventDefault()
+		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+			.then(response => response.json())
+			.then(response => {
+                msg.innerHTML="Message sent successfully"
+                // here below after 5sec the message will be disappered
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },3000)
+                form.reset()
+            })
+			.catch(error => console.error('Error!', error.message))
+	})
+</script>
+</body>
+</html>
