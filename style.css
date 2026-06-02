@@ -399,6 +399,42 @@ form .btn2{
     margin-top: 20px;
 }
 
+/* --------------horizontal project slider------------- */
+.project-slider {
+  display: flex;
+  gap: 20px;                     /* spacing between cards */
+  overflow-x: auto;              /* horizontal scroll */
+  scroll-snap-type: x mandatory; /* snap effect */
+  -webkit-overflow-scrolling: touch; /* smooth scroll on mobile */
+  padding: 20px;
+}
+
+.project-card {
+  flex: 0 0 auto;                /* prevents shrinking */
+  min-width: 250px;              /* card width */
+  scroll-snap-align: start;      /* snap to start */
+ 
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);        /* hover zoom */
+}
+
+/* Optional scrollbar styling */
+.project-slider::-webkit-scrollbar {
+  height: 8px;
+}
+.project-slider::-webkit-scrollbar-thumb {
+  background: #ff004f;
+  border-radius: 10px;
+}
+
+
 /* -----------------css for small screens----------- */
 
 nav .fas{
